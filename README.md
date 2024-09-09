@@ -27,16 +27,12 @@ spring.datasource.password=First#1234
 # Hibernate settings for MySQL dialect
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
 
-# Logging configuration
-logging.level.root=INFO
-logging.level.com.mockcommerce=DEBUG
-logging.file.name=logs/application.log
 ```
-
+Mandatory to have coupon schema in the workbench
 ### Key Configuration Details:
 1. **Database**: MySQL is used as the database, with the required credentials (username and password) set in the `application.properties`.
 2. **Port**: The application runs on port `9091`.
-3. **Logging**: Logs are generated in the `logs/application.log` file. The log folder is automatically created within the service directory, storing all generated logs.
+3. **Logging**: Logs are generated in the `logs` file. The log folder is automatically created within the service directory, storing all generated logs.
 
 ## API Endpoints
 Below are the main API endpoints exposed by the Coupon Management system:
